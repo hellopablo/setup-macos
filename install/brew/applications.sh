@@ -11,6 +11,7 @@ brew install speedtest_cli
 brew install spoof-mac
 brew install sslmate
 brew install terminal-notifier
+brew install zsh zsh-completions
 
 # Install the PHP binaries separatly (conflicting)
 xcode-select --install

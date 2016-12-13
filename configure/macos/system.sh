@@ -7,7 +7,7 @@ echo "System - Disable the 'Are you sure you want to open this application?' dia
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 echo "System - Require password 5 minutes after sleep or screen saver begins"
-defaults write com.apple.screensaver askForPassword -int 300
+defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 300
 
 echo "System - Avoid creating .DS_Store files on network volumes"

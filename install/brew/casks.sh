@@ -17,6 +17,7 @@ brew cask install keepingyouawake
 brew cask install kitematic
 brew cask install macdown
 brew cask install phpstorm
+brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install sizeup
 brew cask install sketch
