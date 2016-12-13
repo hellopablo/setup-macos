@@ -1,15 +1,15 @@
 # Install applications
 echo "Installing applications..."
-brew install git \
-             git-flow \
-             mackup \
-             mas \
-             mysql \
-             node \
-             speedtest_cli \
-             spoof-mac \
-             sslmate \
-             terminal-notifier \
+brew install git
+brew install git-flow
+brew install mackup
+brew install mas
+brew install mysql
+brew install node
+brew install speedtest_cli
+brew install spoof-mac
+brew install sslmate
+brew install terminal-notifier
 
 # Install the PHP binaries separatly (conflicting)
 brew install php56 --with-apache
@@ -27,9 +27,9 @@ brew unlink php71
 brew link php56
 
 # install the other PHP tools
-brew install composer \
-             box \
-             php-code-sniffer \
-             brew-php-switcher \
-             phpunit \
-             nails \
+brew install composer
+brew install box
+brew install php-code-sniffer
+brew install brew-php-switcher
+brew install phpunit
+brew install nails

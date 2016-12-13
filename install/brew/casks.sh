@@ -1,31 +1,31 @@
 # Install casks
 echo "Installing casks..."
-brew cask install alfred \
-                  archiver \
-                  appzapper \
-                  bartender \
-                  docker \
-                  dropbox \
-                  firefox \
-                  google-chrome \
-                  ghostlab \
-                  goofy \
-                  handbrake \
-                  hostbuddy \
-                  insomnia \
-                  istat-menus \
-                  keepingyouawake \
-                  kitematic \
-                  macdown \
-                  phpstorm \
-                  sequel-pro \
-                  sketch \
-                  skype \
-                  spotify \
-                  sublime-text \
-                  tower \
-                  transmit \
-                  virtualbox \
-                  virtualhostx \
-                  whatsapp \
-                  zoomus \
+brew cask install alfred
+brew cask install archiver
+brew cask install appzapper
+brew cask install bartender
+brew cask install docker
+brew cask install dropbox
+brew cask install firefox
+brew cask install google-chrome
+brew cask install ghostlab
+brew cask install goofy
+brew cask install handbrake
+brew cask install hostbuddy
+brew cask install insomnia
+brew cask install istat-menus
+brew cask install keepingyouawake
+brew cask install kitematic
+brew cask install macdown
+brew cask install phpstorm
+brew cask install sequel-pro
+brew cask install sketch
+brew cask install skype
+brew cask install spotify
+brew cask install sublime-text
+brew cask install tower
+brew cask install transmit
+brew cask install virtualbox
+brew cask install virtualhostx
+brew cask install whatsapp
+brew cask install zoomus
