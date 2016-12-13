@@ -8,7 +8,6 @@ brew cask install docker
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install ghostlab
 brew cask install goofy
 brew cask install handbrake
 brew cask install hostbuddy
@@ -19,6 +18,7 @@ brew cask install kitematic
 brew cask install macdown
 brew cask install phpstorm
 brew cask install sequel-pro
+brew cask install sizeup
 brew cask install sketch
 brew cask install skype
 brew cask install spotify

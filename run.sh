@@ -3,8 +3,10 @@ echo  "New Mac Setup Script"
 echo  "A simple script for automating the setup of macOS"
 echo  "---------------------------------------------------"
 
+echo "Caffeinating"
+caffeinate -t 3600 &
+
 # ZSH
-echo "Installing ZSH"
 source "install/zsh/zsh.sh"
 
 # ---------------------------------------------------
@@ -12,7 +14,6 @@ source "install/zsh/zsh.sh"
 # Brew
 # Use brew to install command line tools and brew cask
 # to install applications.
-echo "Brew'ing"
 source "install/brew/brew.sh"
 source "install/brew/applications.sh"
 source "install/brew/casks.sh"
@@ -48,6 +49,7 @@ echo "Configuring system"
 source "configure/macos/dock.sh"
 source "configure/macos/finder.sh"
 source "configure/macos/keyboard.sh"
+source "configure/macos/login.sh"
 source "configure/macos/mail.sh"
 source "configure/macos/printer.sh"
 source "configure/macos/safari.sh"
@@ -55,8 +57,10 @@ source "configure/macos/security.sh"
 source "configure/macos/system.sh"
 source "configure/macos/textedit.sh"
 source "configure/macos/trackpad.sh"
+source "configure/alfred.sh"
 source "configure/apache.sh"
 source "configure/chrome.sh"
+source "configure/git.sh"
 source "configure/mysql.sh"
 source "configure/sublime-text.sh"
 source "configure/terminal.sh"

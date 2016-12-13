@@ -1,4 +1,4 @@
-echo "Configuring the Mail"
+echo "Configuring Mail"
 
 # @todo - default mail client
 

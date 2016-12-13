@@ -1,4 +1,4 @@
-echo "Configuring the Safari"
+echo "Configuring Safari"
 
 echo "Safari - Hide bookmarks bar"
 defaults write com.apple.Safari ShowFavoritesBar -bool false
@@ -16,3 +16,16 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 echo "Safari - Add a context menu item for showing the Web Inspector in web views"
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+echo "Safari - Warn About Fraudulent Websites"
+defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
+
+echo "Safari - Block pop-up windows"
+defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
+
+echo "Safari - Don't even ask about the push notifications"
+defaults write com.apple.Safari CanPromptForPushNotifications -bool false
+
+echo "Safari - Update extensions automatically"
+defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
