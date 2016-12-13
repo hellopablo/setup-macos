@@ -7,8 +7,6 @@ brew cask install alfred \
                   docker \
                   dropbox \
                   firefox \
-                  flow \
-                  fluid \
                   google-chrome \
                   ghostlab \
                   goofy \

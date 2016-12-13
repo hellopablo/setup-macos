@@ -39,7 +39,7 @@ source "install/docker/docker.sh"
 
 # Nativefier Apps
 echo "Nativefier'ing"
-source "install/nativefier/nativefier.sh"
+# source "install/nativefier/nativefier.sh"
 
 # ---------------------------------------------------
 

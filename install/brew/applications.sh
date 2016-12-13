@@ -31,5 +31,5 @@ brew install composer \
              box \
              php-code-sniffer \
              brew-php-switcher \
-             brew install phpunit \
+             phpunit \
              nails \

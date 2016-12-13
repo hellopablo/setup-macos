@@ -1,6 +1,6 @@
 echo "Installing applications..."
 # Hues
-mas install 411811718
+# mas install 411811718
 # Evernote
 mas install 406056744
 # Keynote
@@ -18,7 +18,7 @@ mas install 409203825
 # Pages
 mas install 409201541
 # Dash
-mas install 449589707
+# mas install 449589707
 # iMovie
 mas install 408981434
 # ReadKit
