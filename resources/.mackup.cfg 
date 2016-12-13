@@ -1,0 +1,16 @@
+[storage]
+engine = file_system
+path = /Users/pablo/Dropbox/Apps/
+
+[applications_to_sync]
+bartender
+atom
+dash
+git
+handbrake
+sequel-pro
+sublime-text-3
+zsh
+composer
+SSH
+transmit

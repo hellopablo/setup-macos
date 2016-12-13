@@ -40,12 +40,13 @@ source "install/docker/docker.sh"
 
 # Nativefier Apps
 echo "Nativefier'ing"
-# source "install/nativefier/nativefier.sh"
+source "install/nativefier/nativefier.sh"
 
 # ---------------------------------------------------
 
 # Configure the OS and Applications
-echo "Configuring system"
+echo "Configuring System"
+# @todo - discover these automatically
 source "configure/macos/dock.sh"
 source "configure/macos/finder.sh"
 source "configure/macos/keyboard.sh"
@@ -61,18 +62,21 @@ source "configure/alfred.sh"
 source "configure/apache.sh"
 source "configure/chrome.sh"
 source "configure/git.sh"
+source "configure/mackup.sh"
 source "configure/mysql.sh"
+source "configure/nails.sh"
 source "configure/sublime-text.sh"
 source "configure/terminal.sh"
 
 # ---------------------------------------------------
 
 # All that's left now is the stuff which needs done by hand
-# - Sign into Dropbox and let it sync
-# - `mackup restore`
 # - Android Studio
 # - Creative Cloud
 
 # ---------------------------------------------------
 
+echo ""
+echo ""
 echo "That's all folks!"
+echo "Rememebr to restore application settings via mackup once Dropbox is synced."

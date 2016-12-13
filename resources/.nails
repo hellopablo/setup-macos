@@ -1,0 +1,10 @@
+{
+    "nailsapp/module-auth": {
+        "default_user": {
+            "first_name": "Pablo",
+            "last_name": "de la Peña",
+            "email": "p@shedcollective.org",
+            "username": "pablo"
+        }
+    }
+}
