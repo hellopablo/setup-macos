@@ -9,10 +9,14 @@ fi
 
 # Tap
 echo "Tapping..."
-brew tap caskroom/cask \
-         nailsapp/utilities \
-         shedcollective/utilities \
-         hellopablo/utilities \
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/php
+brew tap homebrew/apache
+brew tap caskroom/cask
+brew tap nailsapp/utilities
+brew tap shedcollective/utilities
+brew tap hellopablo/utilities
 
 # ---------------------------------------------------
 

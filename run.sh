@@ -1,13 +1,11 @@
-# ---------------------------------------------------
-# Setup Script
-#
-# A simple script for automating the setup of macOS
-#
-# ---------------------------------------------------
+echo  "---------------------------------------------------"
+echo  "New Mac Setup Script"
+echo  "A simple script for automating the setup of macOS"
+echo  "---------------------------------------------------"
 
 # ZSH
 echo "Installing ZSH"
-import "install/zsh/zsh.sh"
+source "install/zsh/zsh.sh"
 
 # ---------------------------------------------------
 
@@ -15,52 +13,53 @@ import "install/zsh/zsh.sh"
 # Use brew to install command line tools and brew cask
 # to install applications.
 echo "Brew'ing"
-import "install/brew/brew.sh"
-import "install/brew/applications.sh"
-import "install/brew/casks.sh"
+source "install/brew/brew.sh"
+source "install/brew/applications.sh"
+source "install/brew/casks.sh"
 
 # ---------------------------------------------------
 
 # NPM
 echo "NPM'ing"
-import "install/npm/npm.sh"
+source "install/npm/npm.sh"
 
 # ---------------------------------------------------
 
 # MAS
 echo "MAS'ing"
-import "install/mas/mas.sh"
+source "install/mas/mas.sh"
 
 # ---------------------------------------------------
 
 # Docker Containers
 echo "Docker'ing"
-import "install/docker/docker.sh"
+source "install/docker/docker.sh"
 
 # ---------------------------------------------------
 
 # Nativefier Apps
 echo "Nativefier'ing"
-import "install/nativefier/nativefier.sh"
+source "install/nativefier/nativefier.sh"
 
 # ---------------------------------------------------
 
 # Configure the OS and Applications
 echo "Configuring system"
-import "configure/macos/dock.sh"
-import "configure/macos/finder.sh"
-import "configure/macos/keyboard.sh"
-import "configure/macos/mail.sh"
-import "configure/macos/printer.sh"
-import "configure/macos/safari.sh"
-import "configure/macos/security.sh"
-import "configure/macos/system.sh"
-import "configure/macos/textedit.sh"
-import "configure/macos/trackpad.sh"
-import "configure/apache.sh"
-import "configure/chrome.sh"
-import "configure/mysql.sh"
-import "configure/sublime-text.sh"
+source "configure/macos/dock.sh"
+source "configure/macos/finder.sh"
+source "configure/macos/keyboard.sh"
+source "configure/macos/mail.sh"
+source "configure/macos/printer.sh"
+source "configure/macos/safari.sh"
+source "configure/macos/security.sh"
+source "configure/macos/system.sh"
+source "configure/macos/textedit.sh"
+source "configure/macos/trackpad.sh"
+source "configure/apache.sh"
+source "configure/chrome.sh"
+source "configure/mysql.sh"
+source "configure/sublime-text.sh"
+source "configure/terminal.sh"
 
 # ---------------------------------------------------
 

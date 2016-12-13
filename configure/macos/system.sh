@@ -2,21 +2,21 @@ echo "Configuring the System"
 
 # @todo - hotcorners
 
-printf "System - Expand save panel by default\n"
+echo "System - Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-printf "System - Disable the 'Are you sure you want to open this application?' dialog\n"
+echo "System - Disable the 'Are you sure you want to open this application?' dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-printf "System - Require password immediately after sleep or screen saver begins\n"
+echo "System - Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-printf "System - Avoid creating .DS_Store files on network volumes\n"
+echo "System - Avoid creating .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-printf "System - Automatically restart if system freezes\n"
+echo "System - Automatically restart if system freezes"
 systemsetup -setrestartfreeze on
 
-printf "Bluetooth - Increase sound quality for headphones/headsets\n"
+echo "Bluetooth - Increase sound quality for headphones/headsets"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40

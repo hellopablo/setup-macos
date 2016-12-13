@@ -1,8 +1,8 @@
 echo "Configuring TextEdit"
 
-printf "TextEdit - Use plain text mode for new documents\n"
+echo "TextEdit - Use plain text mode for new documents"
 defaults write com.apple.TextEdit RichText -int 0
 
-printf "TextEdit - Open and save files as UTF-8 encoding\n"
+echo "TextEdit - Open and save files as UTF-8 encoding"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4

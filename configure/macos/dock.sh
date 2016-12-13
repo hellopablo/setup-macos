@@ -4,14 +4,14 @@ echo "Configuring the Dock"
 # @todo - Set size
 # @todo - Set Magnification On
 
-printf "Dock - Remove all default app icons\n"
+echo "Dock - Remove all default app icons"
 defaults write com.apple.dock persistent-apps -array
 
-printf "Dock - Automatically hide and show\n"
+echo "Dock - Automatically hide and show"
 defaults write com.apple.dock autohide -bool true
 
-printf "Dock - Remove the auto-hiding delay\n"
+echo "Dock - Remove the auto-hiding delay"
 defaults write com.apple.Dock autohide-delay -float 0
 
-printf "Dock - Don’t show Dashboard as a Space\n"
+echo "Dock - Don’t show Dashboard as a Space"
 defaults write com.apple.dock "dashboard-in-overlay" -bool true
