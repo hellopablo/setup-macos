@@ -2,6 +2,9 @@ echo "Configuring Safari"
 
 # @todo - enable full address
 
+echo "Safari - Show full URL in search bar"
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+
 echo "Safari - Hide bookmarks bar"
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
