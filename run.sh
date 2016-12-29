@@ -46,28 +46,8 @@ source "install/nativefier/nativefier.sh"
 
 # Configure the OS and Applications
 echo "Configuring System"
-# @todo - discover these automatically
-source "configure/macos/dock.sh"
-source "configure/macos/finder.sh"
-source "configure/macos/keyboard.sh"
-source "configure/macos/login.sh"
-source "configure/macos/mail.sh"
-source "configure/macos/printer.sh"
-source "configure/macos/safari.sh"
-source "configure/macos/security.sh"
-source "configure/macos/system.sh"
-source "configure/macos/textedit.sh"
-source "configure/macos/trackpad.sh"
-source "configure/alfred.sh"
-source "configure/apache.sh"
-source "configure/chrome.sh"
-source "configure/development.sh"
-source "configure/git.sh"
-source "configure/mackup.sh"
-source "configure/mysql.sh"
-source "configure/nails.sh"
-source "configure/sublime-text.sh"
-source "configure/terminal.sh"
+find ./configure -type f -name "*.sh" | while read FILE ; do source "$FILE"; done;
+
 
 # ---------------------------------------------------
 
