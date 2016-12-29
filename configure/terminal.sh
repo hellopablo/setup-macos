@@ -1,3 +1,4 @@
 echo "Configuring Terminal..."
 
-# @todo - Colours
+# @todo - window size
+# @todo - theme
