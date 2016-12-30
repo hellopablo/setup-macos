@@ -4,6 +4,7 @@ brew cask install alfred
 brew cask install archiver
 brew cask install appzapper
 brew cask install bartender
+brew cask install dash
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox

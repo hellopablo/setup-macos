@@ -6,6 +6,11 @@ echo  "---------------------------------------------------"
 echo "Caffeinating"
 caffeinate -t 3600 &
 
+echo "Creating a cache directory"
+mkdir ./cache
+
+# ---------------------------------------------------
+
 # ZSH
 source "install/zsh/zsh.sh"
 
@@ -54,6 +59,11 @@ find ./configure -type f -name "*.sh" | while read FILE ; do source "$FILE"; don
 # All that's left now is the stuff which needs done by hand
 # - Android Studio
 # - Creative Cloud
+
+# ---------------------------------------------------
+
+echo "Clearing cache directory"
+rm -rf ./cache
 
 # ---------------------------------------------------
 
