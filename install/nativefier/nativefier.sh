@@ -1,12 +1,12 @@
 echo "Installing nativefier'ed applications..."
-mkdir "$CACHE/temp_nativefier"
+mkdir "$CACHE/nativefier"
 makeNativefier() {
     local name="$1"
     local icon="./resources/icons/$1.png"
     local url="$2"
     if [ ! -d "$name.app" ]; then
         echo "Nativefier - $1"
-        nativefier -n "$name" -i "$icon" --maximize "$url" "$CACHE/temp_nativefier"
+        nativefier -n "$name" -i "$icon" --maximize "$url" "$CACHE/nativefier"
     fi
 }
 
@@ -19,5 +19,5 @@ makeNativefier "GitLab" "https://gitlab.com"
 makeNativefier "Rollbar" "https://rollbar.com"
 makeNativefier "Shed Intranet" "https://intranet.studio.theshed.io"
 
-find "$CACHE/temp_nativefier" -name '*.app' -maxdepth 2 -exec cp -pr '{}' "/Applications/" ';'
-rm -rf "$CACHE/temp_nativefier"
+find "$CACHE/nativefier" -name '*.app' -maxdepth 2 -exec cp -pr '{}' "/Applications/" ';'
+rm -rf "$CACHE/nativefier"
