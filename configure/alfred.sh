@@ -1,31 +1,31 @@
 echo "Configuring Alfred..."
 
 echo "Alfred - Creating cache directories"
-mkdir ./cache/alfred
-mkdir ./cache/alfred/hellopablo
-mkdir ./cache/alfred/shedcollective
+mkdir "$CACHE/alfred"
+mkdir "$CACHE/alfred/hellopablo"
+mkdir "$CACHE/alfred/shedcollective"
 
 echo "Alfred - Cloning workflow sources"
-git clone git@github.com:hellopablo/alfred-workflows.git ./cache/alfred/hellopablo
-git clone git@github.com:shedcollective/alfred-workflows.git ./cache/alfred/shedcollective
+git clone git@github.com:hellopablo/alfred-workflows.git "$CACHE/alfred/hellopablo"
+git clone git@github.com:shedcollective/alfred-workflows.git "$CACHE/alfred/shedcollective"
 
 echo "Alfred - Moving discovered workflows into place"
-
+# @todo - move workflows
 
 echo "Alfred - Removing cache directories"
-rm -rf ./cache/alfred
+rm -rf "$CACHE/alfred"
 
 # HelloPablo workflows
-# @todo - Open Repos folder
-# @todo - Now()
+# - Open Repos folder
+# - Now()
 
 # Shed workflows
-# @todo - Copy Present Working Directory
+# - Copy Present Working Directory
 
 # Other workflows
-# @todo - Character Counter
-# @todo - Dash
-# @todo - Hash
-# @todo - Hidden Files
-# @todo - IP Address
-# @todo - Open with sublime text
+# - Character Counter
+# - Dash
+# - Hash
+# - Hidden Files
+# - IP Address
+# - Open with sublime text

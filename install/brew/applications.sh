@@ -13,6 +13,7 @@ brew install spoof-mac
 brew install sslmate
 brew install terminal-notifier
 brew install zsh zsh-completions
+brew install imagemagick
 
 # Install apache
 sudo apachectl stop

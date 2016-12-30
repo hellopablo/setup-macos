@@ -6,8 +6,11 @@ echo  "---------------------------------------------------"
 echo "Caffeinating"
 caffeinate -t 3600 &
 
+# ---------------------------------------------------
+
 echo "Creating a cache directory"
-mkdir ./cache
+CACHE="$HOME/setup_cache"
+mkdir $CACHE
 
 # ---------------------------------------------------
 
@@ -63,7 +66,7 @@ find ./configure -type f -name "*.sh" | while read FILE ; do source "$FILE"; don
 # ---------------------------------------------------
 
 echo "Clearing cache directory"
-rm -rf ./cache
+rm -rf $CACHE
 
 # ---------------------------------------------------
 
