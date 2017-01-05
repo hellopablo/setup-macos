@@ -1,5 +1,6 @@
 # Install casks
 echo "Installing casks..."
+brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install archiver
 brew cask install appzapper
