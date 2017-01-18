@@ -13,18 +13,19 @@ brew install spoof-mac
 brew install sslmate
 brew install terminal-notifier
 brew install zsh zsh-completions
-brew install imagemagick
 
 # Install apache
 sudo apachectl stop
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 brew install httpd24 --with-privileged-ports --with-http2
 
-sudo cp -v /usr/local/Cellar/httpd24/2.4.23_2/homebrew.mxcl.httpd24.plist /Library/LaunchDaemons
+# Where did it install to?
+apache_path=$(brew info httpd24 | grep /usr/local/Cellar/httpd24 | grep -o '^\S*')
+
+sudo cp -v "$apache_path/homebrew.mxcl.httpd24.plist" /Library/LaunchDaemons
 sudo chown -v root:wheel /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
 sudo chmod -v 644 /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
 sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
-
 
 # Install the PHP binaries separatly (conflicting)
 xcode-select --install
@@ -61,4 +62,7 @@ brew install box
 brew install php-code-sniffer
 brew install brew-php-switcher
 brew install phpunit
-brew install nails
+
+# Install custom tools
+brew install nailsapp/utilities/nails
+brew install hellopablo/utilities/vhost

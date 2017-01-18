@@ -25,6 +25,8 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 echo "- Photos"
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Photos.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
+# @todo - folder icons (screenshots + downloads)
+
 echo "Dock - Automatically hide and show"
 defaults write com.apple.dock autohide -bool true
 
