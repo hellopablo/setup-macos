@@ -26,6 +26,7 @@ brew cask install sketch
 brew cask install skype
 brew cask install spotify
 brew cask install sublime-text
+brew cask install symboliclinker
 brew cask install tower
 brew cask install transmit
 brew cask install virtualbox
