@@ -2,8 +2,6 @@ echo "Configuring Alfred..."
 
 echo "Alfred - Creating cache directories"
 mkdir "$CACHE/alfred"
-mkdir "$CACHE/alfred/hellopablo"
-mkdir "$CACHE/alfred/shedcollective"
 
 # @todo Other workflows
 # - Character Counter
