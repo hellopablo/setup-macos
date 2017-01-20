@@ -12,6 +12,7 @@ brew install speedtest_cli
 brew install spoof-mac
 brew install sslmate
 brew install terminal-notifier
+brew install wget
 brew install zsh zsh-completions
 
 # Install apache
