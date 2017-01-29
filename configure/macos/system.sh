@@ -28,3 +28,9 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 echo "System - Disable smart quotes and dashes"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+echo "System - Build the locate database"
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+echo "System - Enable SSH"
+sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist

@@ -4,7 +4,6 @@ echo "Alfred - Creating cache directories"
 mkdir "$CACHE/alfred"
 
 # @todo Other workflows
-# - Character Counter
 # - Dash
 # - Hash
 # - Hidden Files
@@ -14,6 +13,16 @@ mkdir "$CACHE/alfred"
 echo "Alfred - Cloning workflow sources"
 git clone git@github.com:hellopablo/alfred-workflows.git "$CACHE/alfred/hellopablo"
 git clone git@github.com:shedcollective/alfred-workflows.git "$CACHE/alfred/shedcollective"
+
+function downloadZip() {
+    local url="$1"
+    local name="$2"
+    local target="$CACHE/alfred/$name.alfredworkflow"
+    wget -O "$target" "$url"
+}
+
+downloadZip https://github.com/RyanVerhey/character-counter-alfred-workflow/archive/master.zip charcount
+
 
 echo "Alfred - Moving discovered workflows into place"
 function installWorkflow() {
