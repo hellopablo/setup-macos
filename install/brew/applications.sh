@@ -13,6 +13,8 @@ brew install spoof-mac
 brew install sslmate
 brew install terminal-notifier
 brew install wget
+brew install curl --with-libssh2 --with-openssl
+brew install openssl
 brew install zsh zsh-completions
 
 # Install apache
@@ -31,27 +33,27 @@ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
 # Install the PHP binaries separatly (conflicting)
 xcode-select --install
 
-brew install php53 --with-httpd24
+brew install php53 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php53-mcrypt
 
 brew unlink php53
-brew install php54 --with-httpd24
+brew install php54 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php54-mcrypt
 
 brew unlink php54
-brew install php55 --with-httpd24
+brew install php55 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php55-mcrypt
 
 brew unlink php55
-brew install php56 --with-httpd24
+brew install php56 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php56-mcrypt
 
 brew unlink php56
-brew install php70 --with-httpd24
+brew install php70 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php70-mcrypt
 
 brew unlink php70
-brew install php71 --with-httpd24
+brew install php71 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php71-mcrypt
 
 brew unlink php71

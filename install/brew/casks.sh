@@ -29,7 +29,14 @@ brew cask install sublime-text
 brew cask install symboliclinker
 brew cask install tower
 brew cask install transmit
+brew cask install utorrent
 brew cask install virtualbox
 brew cask install virtualhostx
 brew cask install whatsapp
 brew cask install zoomus
+
+# --------------------------------------------------------------------------
+
+#  Run installers
+open /usr/local/Caskroom/utorrent/latest/uTorrent.app
+open /Applications/Docker.app
