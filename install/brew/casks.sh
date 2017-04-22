@@ -15,10 +15,10 @@ brew cask install handbrake
 brew cask install hostbuddy
 brew cask install insomnia
 brew cask install istat-menus
+brew cask install jetbrains-toolbox
 brew cask install keepingyouawake
 brew cask install kitematic
 brew cask install macdown
-brew cask install phpstorm
 brew cask install plex-media-player
 brew cask install sequel-pro
 brew cask install sizeup
@@ -38,5 +38,6 @@ brew cask install zoomus
 # --------------------------------------------------------------------------
 
 #  Run installers
-open /usr/local/Caskroom/utorrent/latest/uTorrent.app
-open /Applications/Docker.app
+open "/usr/local/Caskroom/utorrent/latest/uTorrent.app"
+open "/Applications/Docker.app"
+open "/Applications/JetBrains Toolbox.app"
