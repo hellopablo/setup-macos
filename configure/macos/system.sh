@@ -1,5 +1,7 @@
 echo "Configuring the System"
 
+# @todo - Volume pips
+
 echo "System - Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
