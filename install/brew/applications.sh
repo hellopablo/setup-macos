@@ -69,3 +69,4 @@ brew install phpunit
 # Install custom tools
 brew install nailsapp/utilities/nails
 brew install hellopablo/utilities/vhost
+brew install shedcollective/utilities/apache

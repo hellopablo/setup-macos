@@ -1,3 +1,4 @@
 echo "Configuring the Calendar"
 
-# @todo - turn on timezone support
+echo "Calendar - Turn on TimeZone support"
+defaults write com.apple.ical "TimeZone support enabled" -bool true

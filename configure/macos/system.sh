@@ -1,6 +1,10 @@
 echo "Configuring the System"
 
-# @todo - Volume pips
+echo "System - Enable user interface sound effects"
+defaults write -g "com.apple.sound.beep.feedback" -bool true
+
+echo "System - Enable feedback when volume is changed"
+defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -bool true
 
 echo "System - Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true

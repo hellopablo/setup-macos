@@ -40,4 +40,5 @@ brew cask install zoomus
 #  Run installers
 open "/usr/local/Caskroom/utorrent/latest/uTorrent.app"
 open "/Applications/Docker.app"
+open "/Applications/Dropbox.app"
 open "/Applications/JetBrains Toolbox.app"
