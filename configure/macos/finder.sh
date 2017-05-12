@@ -5,6 +5,12 @@ echo "Configuring Finder"
 echo "Cleaning default directories..."
 rm -rf $HOME/Downloads/*
 
+echo "Finder - New windows open with $HOME"
+defaults write com.apple.finder NewWindowTargetPath -string "$HOME"
+
+echo "Finder - Hide internal drives from desktop"
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+
 echo "Finder - Disable the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 

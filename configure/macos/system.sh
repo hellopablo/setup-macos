@@ -43,3 +43,6 @@ sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 
 echo "System - Disable guest login"
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
+
+echo "System - Enable Back To My Mac"
+sudo defaults write com.apple.NetworkBrowser backToMyMacEnabled -bool true
