@@ -5,6 +5,7 @@ apache_httpd_path=dirname $(sudo apachectl -V | grep "SERVER_CONFIG_FILE" | cut 
 apache_httpd_conf="$dirname/httpd.conf"
 apache_httpd_vhosts="$dirname/extra/httpd-vhosts.conf"
 apache_backup_string=$(date +%Y-%m-%d-%H-%M-%S)
+apache_whoami=$(whoami)
 
 echo "Apache - Backing up current config"
 cp "$apache_httpd_conf" "$apache_httpd_conf.bkp-apache_backup_string"
@@ -12,11 +13,15 @@ cp "$apache_httpd_vhosts" "$apache_httpd_vhosts.bkp-apache_backup_string"
 
 echo "Apache - Enabling modules:"
 echo " - mod_rewrite"
-# @todo
+sed -i "" "s/#LoadModule rewrite_module libexec\/mod_rewrite.so/\LoadModule rewrite_module libexec\/mod_rewrite.so/" $apache_httpd_conf
 echo " - mod_deflate"
-# @todo
+sed -i "" "s/#LoadModule deflate_module libexec\/mod_deflate.so/\LoadModule deflate_module libexec\/mod_deflate.so/" $apache_httpd_conf
 
-echo "Apache - change user and group from _www to pablo:staff"
+echo "Apache - change user and group from _www:_www to whoami:staff"
+sed -i "" "s/User _www/User $apache_whoami" $apache_httpd_conf
+sed -i "" "s/Group _www/Group staff" $apache_httpd_conf
+
+echo "Apache - Update the document root"
 # @todo
 
 echo "Apache - AllowOverride all"

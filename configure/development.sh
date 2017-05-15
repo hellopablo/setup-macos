@@ -6,10 +6,22 @@ mkdir ~/Sites
 echo "Development - Creating GitRepos folder"
 mkdir ~/Sites/GitRepos
 
-echo "Generating SSH keypair (choose a secure password, we'll add it to the keychain next)"
-ssh-keygen
+if [ ! -d ~/.ssh ]; then
+    echo "Development - Creating SSH folder"
+    mkdir ~/.ssh
+fi
 
-#  @todo - GCP keys etc
+if [ ! -d ~/.ssh/id_rsa ]; then
+    echo "Development - Generating SSH keypair (choose a secure password, we'll add it to the keychain next)"
+    ssh-keygen
+fi
 
-echo "Adding key to the keychain"
+if [ ! -d ~/.ssh/id_rsa ]; then
+    echo "Development - Generating GCP SSH keypair (specify your email, followed by a secure password)"
+    read EMAIL
+    ssh-keygen -b 4096 -f ~/.ssh/gcp -C $EMAIL -o -a 500
+fi
+
+
+echo "Development - Adding keys to the keychain"
 ssh-add
