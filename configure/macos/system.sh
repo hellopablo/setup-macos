@@ -46,3 +46,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -boo
 
 echo "System - Enable Back To My Mac"
 sudo defaults write com.apple.NetworkBrowser backToMyMacEnabled -bool true
+
+echo "System - Setup locate database"
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
