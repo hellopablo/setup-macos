@@ -20,6 +20,7 @@ makeNativefier "Rollbar" "https://rollbar.com"
 makeNativefier "Shed Intranet" "https://intranet.studio.theshed.io"
 makeNativefier "Invision" "https://projects.invisionapp.com"
 makeNativefier "Dropbox Paper" "https://paper.dropbox.com"
+makeNativefier "Circle CI" "https://circleci.com/dashboard"
 
 find "$CACHE/nativefier" -name '*.app' -maxdepth 2 -exec cp -pr '{}' "/Applications/" ';'
 rm -rf "$CACHE/nativefier"
