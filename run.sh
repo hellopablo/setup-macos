@@ -6,6 +6,12 @@ echo  "---------------------------------------------------"
 echo "Caffeinating"
 caffeinate -t 3600 &
 
+echo "Xcode setup correctly"
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+echo "Agree to xcode license"
+sudo xcodebuild -license
+
 # ---------------------------------------------------
 
 echo "Creating a cache directory"

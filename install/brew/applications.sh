@@ -33,6 +33,9 @@ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
 # Install the PHP binaries separatly (conflicting)
 xcode-select --install
 
+# Start fresh
+brew unlink php53 php54 php55 php56 php70 php71
+
 brew install php53 --with-httpd24 --with-homebrew-curl --with-homebrew-openssl
 brew install php53-mcrypt
 
