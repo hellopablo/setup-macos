@@ -8,22 +8,18 @@ Its main purpose is to automate:
 - Installation of Brew
 - Installation of Brew applications
 - Installation of Brew cask applications
-- Installation of NPM applications
-- Installation of Nativefier applications
 - Installation of MAS applications (via `mas`)
-- Installation of Docker containers
 
 In addition it automates the configuration of:
 
 - macOS
-- Apache
 - Chrome
-- MySQL
 - PHPStorm
-- SublimeText
-
+- 
 
 ## Usage
+
+Ensure Xcode command line tools ahve been installed, then:
 
 `./run.sh`
 
