@@ -32,6 +32,5 @@ brew cask install adobe-creative-cloud \
     tower \
     trailer \
     transmit \
-    utorrent \
     whatsapp \
     zoomus

@@ -14,8 +14,8 @@ sudo xcodebuild -license accept
 
 # ---------------------------------------------------
 
-echo "Creating a cache directory"
 CACHE="$HOME/setup_cache"
+echo "Creating a cache directory: $CACHE"
 mkdir $CACHE
 
 # ---------------------------------------------------
@@ -45,8 +45,8 @@ find ./configure -type f -name "*.sh" | while read FILE ; do source "$FILE"; don
 
 # ---------------------------------------------------
 
-echo "Clearing cache directory"
-rm -rf $CACHE
+echo "Clearing cache directory: $CACHE"
+rm -rf "$CACHE"
 
 # ---------------------------------------------------
 

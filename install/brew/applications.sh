@@ -1,5 +1,6 @@
 # Install applications
 echo "Installing applications..."
+brew install curl --with-libssh2 --with-openssl
 brew install git \
     git-flow \
     hub \
@@ -9,7 +10,6 @@ brew install git \
     speedtest_cli \
     spoof-mac \
     wget \
-    curl --with-libssh2 --with-openssl \
     openssl \
     zsh zsh-completions \
     composer \
