@@ -23,7 +23,6 @@ function downloadZip() {
 
 downloadZip https://github.com/RyanVerhey/character-counter-alfred-workflow/archive/master.zip charcount
 
-
 echo "Alfred - Moving discovered workflows into place"
 function installWorkflow() {
     local filename=$(basename "$1");

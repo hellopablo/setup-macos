@@ -16,9 +16,6 @@ echo "System - Require password 5 minutes after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 300
 
-echo "System - Avoid creating .DS_Store files on network volumes"
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
 echo "System - Automatically restart if system freezes"
 sudo systemsetup -setrestartfreeze on
 
@@ -46,6 +43,3 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -boo
 
 echo "System - Enable Back To My Mac"
 sudo defaults write com.apple.NetworkBrowser backToMyMacEnabled -bool true
-
-echo "System - Setup locate database"
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist

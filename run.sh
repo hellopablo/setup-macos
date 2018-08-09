@@ -26,17 +26,10 @@ source "install/zsh/zsh.sh"
 # ---------------------------------------------------
 
 # Brew
-# Use brew to install command line tools and brew cask
-# to install applications.
+# Use brew to install command line tools and brew cask to install applications.
 source "install/brew/brew.sh"
 source "install/brew/applications.sh"
 source "install/brew/casks.sh"
-
-# ---------------------------------------------------
-
-# NPM
-echo "NPM'ing"
-source "install/npm/npm.sh"
 
 # ---------------------------------------------------
 
@@ -46,28 +39,9 @@ source "install/mas/mas.sh"
 
 # ---------------------------------------------------
 
-# Docker Containers
-echo "Docker'ing"
-source "install/docker/docker.sh"
-
-# ---------------------------------------------------
-
-# Nativefier Apps
-echo "Nativefier'ing"
-source "install/nativefier/nativefier.sh"
-
-# ---------------------------------------------------
-
 # Configure the OS and Applications
 echo "Configuring System"
 find ./configure -type f -name "*.sh" | while read FILE ; do source "$FILE"; done;
-
-
-# ---------------------------------------------------
-
-# All that's left now is the stuff which needs done by hand
-# - Android Studio
-# - Creative Cloud
 
 # ---------------------------------------------------
 
@@ -79,4 +53,4 @@ rm -rf $CACHE
 echo ""
 echo ""
 echo "That's all folks!"
-echo "Rememebr to restore application settings via mackup once Dropbox is synced."
+echo "Remember to restore application settings via mackup once Dropbox is synced."
