@@ -11,7 +11,7 @@ brew cask install adobe-creative-cloud \
     dropbox \
     google-chrome \
     handbrake \
-    imageoptim
+    imageoptim \
     istat-menus \
     iterm2 \
     itsycal \
