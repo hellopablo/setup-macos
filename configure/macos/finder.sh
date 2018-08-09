@@ -2,9 +2,6 @@ echo "Configuring Finder"
 
 # @todo - Set sidebar items
 
-echo "Cleaning default directories..."
-rm -rf $HOME/Downloads/*
-
 echo "Finder - New windows open with $HOME"
 defaults write com.apple.finder NewWindowTargetPath -string "$HOME"
 
