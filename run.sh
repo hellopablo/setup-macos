@@ -7,10 +7,10 @@ echo "Caffeinating"
 caffeinate -t 3600 &
 
 echo "Xcode setup correctly"
-sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcode-select -s /Applications/Xcode.app
 
 echo "Agree to xcode license"
-sudo xcodebuild -license
+sudo xcodebuild -license accept
 
 # ---------------------------------------------------
 
