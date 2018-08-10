@@ -6,7 +6,7 @@ defaults write com.apple.dock persistent-apps -array
 echo "Adding app icons"
 files=(
     "Chrome.app"
-    "Things.app"
+    "Things3.app"
     "Messages.app"
     "Calendar.app"
     "Slack.app"
@@ -17,7 +17,7 @@ files=(
 )
 for APP in "${files[@]}"
 do
-    echo "defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$APP</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'"
+    defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$APP</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 done
 
 # @todo - folder icons (screenshots + downloads)
