@@ -2,6 +2,9 @@ echo "Configuring Finder"
 
 # @todo - Set sidebar items
 
+echo "Finder - Enable dark mode"
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+
 echo "Finder - New windows open with $HOME"
 defaults write com.apple.finder NewWindowTargetPath -string "$HOME"
 
