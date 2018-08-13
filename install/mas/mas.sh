@@ -7,3 +7,4 @@ mas install 588726889  # ReadKit
 mas install 949724400  # MoneyWiz
 mas install 1000397973 # Wallcat
 mas install 904280696  # Things
+mas install 1176895641 # Spark
