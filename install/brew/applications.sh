@@ -13,4 +13,5 @@ brew install git \
     openssl \
     zsh zsh-completions \
     composer \
-    php-code-sniffer
+    php-code-sniffer \
+    doctl
