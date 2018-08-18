@@ -30,6 +30,7 @@ brew cask install adobe-creative-cloud \
     spotify \
     sublime-text \
     tower \
+    torbrowser \
     trailer \
     transmit \
     whatsapp \
