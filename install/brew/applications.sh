@@ -14,4 +14,7 @@ brew install git \
     zsh zsh-completions \
     composer \
     php-code-sniffer \
-    doctl
+    doctl \
+    circleci \
+    # For singing git commits
+    gnupg pinentry-mac
