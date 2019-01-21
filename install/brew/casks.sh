@@ -1,6 +1,7 @@
 # Install casks
 echo "Installing casks..."
-brew cask install adobe-creative-cloud \
+brew cask install \
+    adobe-creative-cloud \
     1password \
     alfred \
     archiver \
@@ -34,4 +35,5 @@ brew cask install adobe-creative-cloud \
     trailer \
     transmit \
     whatsapp \
-    zoomus
+    zoomus \
+    atom

@@ -31,6 +31,11 @@ source "install/brew/brew.sh"
 source "install/brew/applications.sh"
 source "install/brew/casks.sh"
 
+# --------------------------------------------------------------------------
+
+# Globasl composer
+source "install/composer.sh"
+
 # ---------------------------------------------------
 
 # MAS

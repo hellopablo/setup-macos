@@ -6,14 +6,14 @@ defaults write com.apple.dock persistent-apps -array
 echo "Adding app icons"
 files=(
     "Chrome.app"
-    "Spark.app"
+    "Shift.app"
     "Things3.app"
     "Messages.app"
     "Calendar.app"
     "Slack.app"
     "Sequel Pro.app"
     "PhpStorm.app"
-    "Sublime Text.app"
+    "Atom.app"
     "Tower.app"
 )
 for APP in "${files[@]}"
