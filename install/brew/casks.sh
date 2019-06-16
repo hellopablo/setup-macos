@@ -5,6 +5,7 @@ brew cask install \
     1password \
     alfred \
     archiver \
+    atom \
     bartender \
     dash \
     daisydisk \
@@ -14,13 +15,9 @@ brew cask install \
     handbrake \
     imageoptim \
     istat-menus \
-    iterm2 \
     itsycal \
     jetbrains-toolbox \
-    joinme \
     keepingyouawake \
-    kitematic \
-    macdown \
     plex-media-player \
     postman \
     rocket \
@@ -34,6 +31,6 @@ brew cask install \
     torbrowser \
     trailer \
     transmit \
+    typora \
     whatsapp \
-    zoomus \
-    atom
+    zoomus
