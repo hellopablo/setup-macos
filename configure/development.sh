@@ -17,9 +17,8 @@ if [ ! -d ~/.ssh/id_rsa ]; then
 fi
 
 if [ ! -d ~/.ssh/id_rsa ]; then
-    echo "Development - Generating GCP SSH keypair (specify your email, followed by a secure password)"
-    read EMAIL
-    ssh-keygen -b 4096 -f ~/.ssh/gcp -C $EMAIL -o -a 500
+    echo "Development - Generating GCP SSH keypair (choose a secure password, we'll add it to the keychain next)"
+    ssh-keygen -b 4096 -f ~/.ssh/gcp -C p@shedcollective.org -o -a 500
 fi
 
 
