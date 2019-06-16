@@ -1,7 +1,13 @@
 # Install applications
 echo "Installing applications..."
-brew install curl --with-libssh2 --with-openssl
-brew install git \
+brew tap shedcollective/utilities
+brew tap nails/utilities
+brew install \
+    curl --with-libssh2 --with-openssl
+brew install \
+    shed \
+    nails \
+    git \
     git-flow \
     hub \
     mackup \
@@ -13,8 +19,10 @@ brew install git \
     openssl \
     zsh zsh-completions \
     composer \
+    php@7.4 \
     php-code-sniffer \
     doctl \
     circleci \
     # For singing git commits
     gnupg pinentry-mac
+
