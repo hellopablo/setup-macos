@@ -14,7 +14,7 @@ echo "Login Item - LittleIpsum"
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/LittleIpsum.app", hidden:true}'
 
 echo "Login Item - Wallcat"
-osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Walcat.app", hidden:true}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Wallcat.app", hidden:true}'
 
 echo "Login Item - Itsycal"
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Itsycal.app", hidden:true}'
