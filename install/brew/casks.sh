@@ -30,7 +30,7 @@ brew cask install \
     sublime-text \
     tableplus \
     tower \
-    torbrowser \
+    tor-browser \
     trailer \
     transmit \
     typora \
