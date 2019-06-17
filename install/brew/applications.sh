@@ -18,7 +18,7 @@ brew install \
     openssl \
     zsh zsh-completions \
     composer \
-    php@7.4 \
+    php@7.3 \
     php-code-sniffer \
     doctl \
     circleci \
