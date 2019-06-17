@@ -18,6 +18,7 @@ brew cask install \
     itsycal \
     jetbrains-toolbox \
     keepingyouawake \
+    krisp \
     plex-media-player \
     postman \
     rocket \
@@ -27,6 +28,7 @@ brew cask install \
     slack \
     spotify \
     sublime-text \
+    tableplus \
     tower \
     torbrowser \
     trailer \
