@@ -3,8 +3,6 @@ echo "Installing applications..."
 brew tap shedcollective/utilities
 brew tap nails/utilities
 brew install \
-    curl --with-libssh2 --with-openssl
-brew install \
     shed \
     nails \
     git \
@@ -15,6 +13,7 @@ brew install \
     node \
     speedtest_cli \
     spoof-mac \
+    curl \
     wget \
     openssl \
     zsh zsh-completions \
