@@ -23,5 +23,5 @@ brew install \
     doctl \
     circleci \
     # For singing git commits
-    gnupg pinentry-mac
-
+    gnupg pinentry-mac \
+    homebrew/cask-fonts/font-fira-code
