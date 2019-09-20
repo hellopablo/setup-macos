@@ -3,6 +3,7 @@ echo "Installing applications..."
 brew tap shedcollective/utilities
 brew tap nails/utilities
 brew install \
+    coreutils \
     shed \
     nails \
     git \
